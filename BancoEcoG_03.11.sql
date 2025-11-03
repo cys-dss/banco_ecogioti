@@ -1037,6 +1037,7 @@ ALTER TABLE ONLY public.precos_milheiro
 ALTER TABLE ONLY public.precos_milheiro
     ADD CONSTRAINT precos_milheiro_id_tipo_impressao_fkey FOREIGN KEY (id_tipo_impressao) REFERENCES public.tipos_impressao(id_tipo_impressao);
 
+ALTER DATABASE nome_do_banco SET search_path TO public;
 
 -- Completed on 2025-11-03 19:07:17
 
